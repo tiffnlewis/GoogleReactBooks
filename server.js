@@ -19,7 +19,7 @@ app.use(routes);
 
 //ToDO: switch db to googlebooks
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist"
+  process.env.MONGOLAB_PURPLE_URI || "mongodb://localhost/reactreadinglist"
 );
 
 // Start the API server
