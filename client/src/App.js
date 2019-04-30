@@ -5,7 +5,6 @@ import Search from "./pages/Search";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,9 +18,6 @@ function App() {
           <Route exact path="/books/:id" component={Detail} />
           <Route component={NoMatch} />
         </Switch>
-      </div>
-      <div>
-        <Footer />
       </div>
     </Router>
   );
